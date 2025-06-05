@@ -35,8 +35,11 @@ header {
 }
 
 .gridImage.zero {
-    grid-row: 1 / span 3;
-    grid-column: 1 / 2;
+    background: red;
+    min-width: 100px;
+    min-height: 100px;
+    border: 2px solid black;
+
 }
 
 .gridImage {
