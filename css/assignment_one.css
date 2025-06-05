@@ -65,9 +65,7 @@ header {
     grid-template-rows: repeat(3, 160px);
 }
 
-.display_md {
-    display: none;
-}
+
 
 /*Mobile */
 
