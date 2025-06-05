@@ -46,3 +46,26 @@ header {
     height: 100%;
 }
 
+/* Tablet */
+
+@media (max-width: 1000px) {
+    body {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+#mainBody {
+    flex-direction: column;
+    gap: 40px;
+}
+
+#rightContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 160px);
+}
+
+.display_md {
+    display: none;
+}
+
