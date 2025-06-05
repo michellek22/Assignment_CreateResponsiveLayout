@@ -33,3 +33,9 @@ header {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 10px;
 }
+
+
+.gridImage.zero.display_md {
+    grid-row: 1 / span 3;
+    grid-column: 1 / 2;
+}
