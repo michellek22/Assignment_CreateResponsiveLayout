@@ -36,7 +36,7 @@ header {
 
 /* Tablet */
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
     body {
         width: 60%;
         margin: 0 auto;
