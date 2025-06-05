@@ -69,3 +69,11 @@ header {
     display: none;
 }
 
+/*Mobile */
+
+@media (max-width: 570px){
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
