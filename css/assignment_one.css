@@ -13,3 +13,11 @@ header {
   align-items: center;
 }
 
+
+#mainBody {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
