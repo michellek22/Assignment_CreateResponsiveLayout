@@ -52,7 +52,7 @@ header {
 
 
 /* grid areas */
-.gridImage.zero.gridImage.zero.display_md  { grid-area: large; }
+.gridImage.zero.display_md  { grid-area: large; }
 .gridImage.one   { grid-area: one; }
 .gridImage.two   { grid-area: two; }
 .gridImage.three { grid-area: three; }
