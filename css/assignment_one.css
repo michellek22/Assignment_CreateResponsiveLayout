@@ -6,76 +6,48 @@ Only this will be graded.
 
 /* Desktop */
 
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 30px 0;
 }
 
-
-#mainBody {
-    margin-bottom: 50px;
-} 
-
 #mainBody {
   display: flex;
+  justify-content: space-between;
   gap: 100px;
+  margin-bottom: 50px;
 }
 
-#leftContainer, #rightContainer {
-    flex: 1;
+#leftContainer,
+#rightContainer {
+  flex: 1;
 }
 
 #rightContainer {
-    display: grid;
-    grid-template-rows: repeat(3, 160px);
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 160px);
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "large one two"
+    "large three four"
+    "large five six";
 }
 
 
-.gridImage.zero.display_md {
-    grid-row: 1 / span 3;
-    grid-column: 1 / 2;
-}
+/* grid areas */
+.gridImage.zero.gridImage.zero.display_md  { grid-area: large; }
+.gridImage.one   { grid-area: one; }
+.gridImage.two   { grid-area: two; }
+.gridImage.three { grid-area: three; }
+.gridImage.four  { grid-area: four; }
+.gridImage.five  { grid-area: five; }
+.gridImage.six   { grid-area: six; }
 
-
-.gridImage {
-    width: 100%;
-    height: 100%;
-}
-
-/* Tablet */
-
-@media (max-width: 1000px) {
-    body {
-        width: 60%;
-        margin: 0 auto;
-    }
-}
-
-#mainBody {
-    flex-direction: column;
-    gap: 40px;
-}
-
-#rightContainer {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 160px);
-}
-
-.display_md {
-    display: none;
-}
-
-
-
-/*Mobile */
-
-@media (max-width: 570px){
-    body {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
