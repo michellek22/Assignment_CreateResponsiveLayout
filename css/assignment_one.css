@@ -18,6 +18,14 @@ header {
   padding: 30px 0;
 }
 
+#topMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
 #mainBody {
   display: flex;
   justify-content: space-between;
@@ -59,8 +67,16 @@ header {
   .gridImage.zero.display_md {
     display: none;
   }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   body {
     width: 60%;
+  }
+  #topMenu {
+    justify-content: center;
+    gap: 10px;
   }
   #mainBody {
     flex-direction: column;
