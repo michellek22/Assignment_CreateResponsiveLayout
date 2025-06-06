@@ -51,3 +51,21 @@ header {
 .gridImage.five  { grid-area: five; }
 .gridImage.six   { grid-area: six; }
 
+@media (max-device-width: 1000px) {
+  .gridImage.zero.display_md {
+    display: none;
+  }
+  body {
+    width: 60%;
+  }
+  #mainBody {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #rightContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 160px);
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
